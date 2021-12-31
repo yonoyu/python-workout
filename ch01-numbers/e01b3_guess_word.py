@@ -14,8 +14,9 @@ Until they guess correctly, tell them to guess one that's
 earlier or later in the dictionary.
 """
     answer = random.choice(WORDS)
-
+    
     while True:
+        
         user_guess = int(input('What is your guess? '))
 
         if user_guess == answer:

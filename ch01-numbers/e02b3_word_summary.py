@@ -2,7 +2,7 @@
 """Solution to chapter 1, exercise 2, beyond 3: words summary"""
 
 
-def summarize(words):
+def summarize(*words):
     """Accepts a list of strings.
 
 Returns a 3-element tuple containing three integers: (a) length
@@ -13,3 +13,4 @@ average word length.
                     for one_word in words]
 
     return min(word_lengths), max(word_lengths), sum(word_lengths)/len(word_lengths)
+print(summarize(*['ant', 'bat', 'cat', 'dad', 'eggs' ]))
